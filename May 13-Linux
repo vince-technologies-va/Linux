@@ -9,3 +9,1499 @@ Ch 9  - Familiarised to create, remove, copy, move, rename files and directories
 
 Ch 10 - Familiarised to work with file content commands(head, tail, cat, tac, copy, more, less and strings).
       - Experimented on combinations involving directory commands and files and its contents from different directories.
+
+
+
+
+
+
+Script started on Wed May 14 11:21:55 2025
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hppwd[?2004l
+
+/Users/sai
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hccd /etc[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/etc
+[0m[27m[24m[J(base) sai@MacBook-Air /etc % [K[?2004hppwd[?2004l
+
+/etc
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/etc
+[0m[27m[24m[J(base) sai@MacBook-Air /etc % [K[?2004hccd[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hppwd[?2004l
+
+/Users/sai
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004heecho boot grub doesnt exist on mac[?2004l
+
+boot grub doesnt exist on mac
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hecho boot grub doesnt exist on mac[34Dpwd                               [31Decho boot grub doesnt exist on mac[34Dpwd                               [31D p  ccd /boot/grub[?2004l
+
+cd: no such file or directory: /boot/grub
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hccd ..[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users
+[0m[27m[24m[J(base) sai@MacBook-Air /Users % [K[?2004hppwd[?2004l
+
+/Users
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users
+[0m[27m[24m[J(base) sai@MacBook-Air /Users % [K[?2004hccd /[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/
+[0m[27m[24m[J(base) sai@MacBook-Air / % [K[?2004hppwd[?2004l
+
+/
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/
+[0m[27m[24m[J(base) sai@MacBook-Air / % [K[?2004hlls[?2004l
+
+Applications	etc		private		Users
+bin		home		sbin		usr
+cores		Library		System		var
+dev		opt		tmp		Volumes
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/
+[0m[27m[24m[J(base) sai@MacBook-Air / % [K[?2004hlls -l[?2004l
+
+total 10
+drwxrwxr-x  37 root  admin  1184 May 14 00:17 Applications
+drwxr-xr-x@ 39 root  wheel  1248 Apr 12 01:16 bin
+drwxr-xr-x   2 root  wheel    64 Jul 11  2023 cores
+dr-xr-xr-x   4 root  wheel  4711 Apr 17 23:15 dev
+lrwxr-xr-x@  1 root  wheel    11 Apr 12 01:16 etc -> private/etc
+lrwxr-xr-x   1 root  wheel    25 Apr 17 23:50 home -> /System/Volumes/Data/home
+drwxr-xr-x  74 root  wheel  2368 Jan 12 00:31 Library
+drwxr-xr-x   3 root  wheel    96 Sep 29  2023 opt
+drwxr-xr-x   6 root  wheel   192 Apr 17 23:50 private
+drwxr-xr-x@ 76 root  wheel  2432 Apr 12 01:16 sbin
+drwxr-xr-x@ 10 root  wheel   320 Apr 12 01:16 System
+lrwxr-xr-x@  1 root  wheel    11 Apr 12 01:16 tmp -> private/tmp
+drwxr-xr-x   5 root  admin   160 May 23  2024 Users
+drwxr-xr-x@ 11 root  wheel   352 Apr 12 01:16 usr
+lrwxr-xr-x@  1 root  wheel    11 Apr 12 01:16 var -> private/var
+drwxr-xr-x   4 root  wheel   128 May 13 22:16 Volumes
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/
+[0m[27m[24m[J(base) sai@MacBook-Air / % [K[?2004hlls -l  /etc[?2004l
+
+afpovertcp.cfg				ntp.conf
+aliases					openldap
+aliases.db				pam.d
+apache2					passwd
+asl					paths
+asl.conf				paths.d
+auto_home				periodic
+auto_master				pf.anchors
+autofs.conf				pf.conf
+bashrc					pf.os
+bashrc_Apple_Terminal			postfix
+com.apple.screensharing.agent.launchd	postgres-reg.ini
+csh.cshrc				ppp
+csh.login				profile
+csh.logout				protocols
+cups					racoon
+defaults				rc.common
+find.codes				rc.netboot
+ftpusers				resolv.conf
+gettytab				rmtab
+group					rpc
+hosts					rtadvd.conf
+hosts.equiv				security
+irbrc					services
+kern_loader.conf			shells
+krb5.keytab				snmp
+localtime				ssh
+locate.rc				ssl
+mail.rc					sudo_lecture
+man.conf				sudoers
+manpaths				sudoers.d
+manpaths.d				syslog.conf
+master.passwd				ttys
+networks				uucp
+newsyslog.conf				wfs
+newsyslog.d				xtab
+nfs.conf				zprofile
+notify.conf				zshrc
+ntp_opendirectory.conf			zshrc_Apple_Terminal
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/
+[0m[27m[24m[J(base) sai@MacBook-Air / % [K[?2004hlls /bin/ [?2004l
+
+[		dd		launchctl	pwd		tcsh
+bash		df		link		realpath	test
+cat		echo		ln		rm		unlink
+chmod		ed		ls		rmdir		wait4path
+cp		expr		mkdir		sh		zsh
+csh		hostname	mv		sleep
+dash		kill		pax		stty
+date		ksh		ps		sync
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/
+[0m[27m[24m[J(base) sai@MacBook-Air / % [K[?2004hlls /sbin[?2004l
+
+apfs_hfs_convert	md5sum			newfs_hfs
+apfs_unlockfv		mknod			newfs_msdos
+disklabel		mount			newfs_udf
+dmesg			mount_9p		nfsd
+dynamic_pager		mount_acfs		nfsiod
+fibreconfig		mount_afp		nologin
+fsck			mount_apfs		pfctl
+fsck_apfs		mount_cd9660		ping
+fsck_cs			mount_cddafs		ping6
+fsck_exfat		mount_devfs		quotacheck
+fsck_fskit		mount_exfat		reboot
+fsck_hfs		mount_fdesc		route
+fsck_msdos		mount_ftp		sha1
+fsck_udf		mount_hfs		sha1sum
+fstyp			mount_msdos		sha224
+fstyp_hfs		mount_nfs		sha224sum
+fstyp_msdos		mount_smbfs		sha256
+fstyp_ntfs		mount_tmpfs		sha256sum
+fstyp_udf		mount_udf		sha384
+halt			mount_virtiofs		sha384sum
+ifconfig		mount_webdav		sha512
+kextload		mpioutil		sha512sum
+kextunload		newfs_apfs		shutdown
+launchd			newfs_exfat		umount
+md5			newfs_fskit
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/
+[0m[27m[24m[J(base) sai@MacBook-Air / % [K[?2004hlls /bin /sbin[?2004l
+
+/bin:
+[		dd		launchctl	pwd		tcsh
+bash		df		link		realpath	test
+cat		echo		ln		rm		unlink
+chmod		ed		ls		rmdir		wait4path
+cp		expr		mkdir		sh		zsh
+csh		hostname	mv		sleep
+dash		kill		pax		stty
+date		ksh		ps		sync
+
+/sbin:
+apfs_hfs_convert	md5sum			newfs_hfs
+apfs_unlockfv		mknod			newfs_msdos
+disklabel		mount			newfs_udf
+dmesg			mount_9p		nfsd
+dynamic_pager		mount_acfs		nfsiod
+fibreconfig		mount_afp		nologin
+fsck			mount_apfs		pfctl
+fsck_apfs		mount_cd9660		ping
+fsck_cs			mount_cddafs		ping6
+fsck_exfat		mount_devfs		quotacheck
+fsck_fskit		mount_exfat		reboot
+fsck_hfs		mount_fdesc		route
+fsck_msdos		mount_ftp		sha1
+fsck_udf		mount_hfs		sha1sum
+fstyp			mount_msdos		sha224
+fstyp_hfs		mount_nfs		sha224sum
+fstyp_msdos		mount_smbfs		sha256
+fstyp_ntfs		mount_tmpfs		sha256sum
+fstyp_udf		mount_udf		sha384
+halt			mount_virtiofs		sha384sum
+ifconfig		mount_webdav		sha512
+kextload		mpioutil		sha512sum
+kextunload		newfs_apfs		shutdown
+launchd			newfs_exfat		umount
+md5			newfs_fskit
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/
+[0m[27m[24m[J(base) sai@MacBook-Air / % [K[?2004hlls ~[?2004l
+
+anaconda3			Movies
+Applications			Music
+Ch_8_to_10.txt			OneDrive - Villanova University
+Desktop				Pictures
+Documents			Public
+Downloads			Virtual Machines.localized
+iCloud Drive (Archive)		workspace.code-workspace
+Library
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/
+[0m[27m[24m[J(base) sai@MacBook-Air / % [K[?2004hlls -a / ~[1Cl ~[?2004l
+
+total 168
+drwxr-x---+  46 sai   staff   1472 May 14 11:21 .
+drwxr-xr-x    5 root  admin    160 May 23  2024 ..
+drwxr-xr-x    4 sai   staff    128 Dec 21  2023 .anaconda
+drwxr-x---    4 sai   staff    128 Feb 24 19:26 .android
+drwxr-xr-x@  14 sai   staff    448 Apr  7  2024 .anydesk
+drwxr-xr-x   24 sai   staff    768 Mar 12  2024 .Azure
+drwxr-xr-x@   4 sai   staff    128 Jun  6  2024 .azuredatastudio
+-rw-r--r--    1 sai   staff    471 Dec 21  2023 .bash_profile
+drwxr-xr-x    3 sai   staff     96 Jan 29  2024 .cache
+-r--------    1 sai   staff      7 Aug 30  2023 .CFUserTextEncoding
+drwxr-xr-x    4 sai   staff    128 Apr 27  2024 .conda
+-rw-r--r--    1 sai   staff     23 Dec 21  2023 .condarc
+drwxr-xr-x    4 sai   staff    128 Jan 30  2024 .config
+drwxr-xr-x    3 sai   staff     96 Dec 21  2023 .continuum
+drwx------    3 sai   staff     96 Sep 17  2023 .cups
+-rw-r--r--@   1 sai   staff  14340 May 12 10:40 .DS_Store
+drwxr-xr-x    3 sai   staff     96 Oct 31  2023 .idlerc
+drwxr-xr-x    2 sai   staff     64 Dec 21  2023 .ipython
+drwxr-xr-x    3 sai   staff     96 Jan 29  2024 .local
+drwx------@   7 sai   staff    224 Apr 21  2024 .pgadmin
+drwxr-xr-x@   5 sai   staff    160 Sep 20  2023 .sqldeveloper
+-rw-------    1 sai   staff     56 Nov 14  2023 .sqlite_history
+drwx------    4 sai   staff    128 Mar  6  2024 .ssh
+-rw-r--r--    1 sai   staff    299 Dec 21  2023 .tcshrc
+drwx------+  34 sai   staff   1088 May 14 11:21 .Trash
+drwxr-xr-x@   5 sai   staff    160 Sep  6  2023 .vscode
+-rw-r--r--    1 sai   staff    659 Dec 21  2023 .xonshrc
+-rw-r--r--    1 sai   staff    166 Sep 29  2023 .zprofile
+-rw-------    1 sai   staff  27223 May 14 11:21 .zsh_history
+drwx------   12 sai   staff    384 May 14 11:21 .zsh_sessions
+-rw-r--r--    1 sai   staff    860 Dec 21  2023 .zshrc
+drwxr-xr-x   29 sai   staff    928 Feb 19 09:46 anaconda3
+drwx------@   5 sai   staff    160 Feb 26  2024 Applications
+-rw-r--r--    1 sai   staff   2653 May 14 11:17 Ch_8_to_10.txt
+drwx------@  20 sai   staff    640 May 14 08:59 Desktop
+drwx------+   5 sai   staff    160 Dec  5  2023 Documents
+drwx------+  18 sai   staff    576 May 12 11:01 Downloads
+drwx------    6 sai   staff    192 Sep 29  2023 iCloud Drive (Archive)
+drwx------@ 107 sai   staff   3424 Apr 18 12:16 Library
+drwx------    8 sai   staff    256 Feb 24 20:14 Movies
+drwx------+   6 sai   staff    192 Mar 18 14:47 Music
+lrwxr-xr-x    1 sai   staff     60 Sep  3  2023 OneDrive - Villanova University -> /Users/sai/Library/CloudStorage/OneDrive-VillanovaUniversity
+drwx------+   6 sai   staff    192 Jul 19  2024 Pictures
+drwxr-xr-x+   4 sai   staff    128 Aug 30  2023 Public
+drwxr-xr-x    5 sai   staff    160 Feb 25 15:43 Virtual Machines.localized
+-rw-r--r--    1 sai   staff     35 Jun 21  2024 workspace.code-workspace
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/
+[0m[27m[24m[J(base) sai@MacBook-Air / % [K[?2004hlls -lh /boot[?2004l
+
+ls: /boot: No such file or directory
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/
+[0m[27m[24m[J(base) sai@MacBook-Air / % [K[?2004heecho boot doesn/ t exist in macOs[?2004l
+
+boot doesnt exist in macOs
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/
+[0m[27m[24m[J(base) sai@MacBook-Air / % [K[?2004hccd ' c  ppwd[?2004l
+
+/
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/
+[0m[27m[24m[J(base) sai@MacBook-Air / % [K[?2004hccd '? /User/sai/Desktop'[?2004l
+
+cd: no such file or directory: /User/sai/Desktop
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/
+[0m[27m[24m[J(base) sai@MacBook-Air / % [K[?2004hcd '/User/sai/Desktop's/sai/Desktop'[13D[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/Desktop
+[0m[27m[24m[J(base) sai@MacBook-Air Desktop % [K[?2004hppwd[?2004l
+
+/Users/sai/Desktop
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/Desktop
+[0m[27m[24m[J(base) sai@MacBook-Air Desktop % [K[?2004hmmkdir testdir[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/Desktop
+[0m[27m[24m[J(base) sai@MacBook-Air Desktop % [K[?2004heecho or    e  mmkdir ! ` ~/testdir[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/Desktop
+[0m[27m[24m[J(base) sai@MacBook-Air Desktop % [K[?2004hccd /etc[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/etc
+[0m[27m[24m[J(base) sai@MacBook-Air /etc % [K[?2004hppwd[?2004l
+
+/etc
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/etc
+[0m[27m[24m[J(base) sai@MacBook-Air /etc % [K[?2004hmmkdir !/  ~/newdir[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/etc
+[0m[27m[24m[J(base) sai@MacBook-Air /etc % [K[?2004hccdc  ccd ~/[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hppwd[?2004l
+
+/Users/sai
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hmmkdir - p /dir1/dir2/dir3[?2004l
+
+mkdir: /dir1: Read-only file system
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hccsc cd ~[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hcd ~mkdir -p /dir1/dir2/dir3~/dir1/dir2/dir3[15D[15C[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hlls-  - ~[?2004l
+
+anaconda3			Movies
+Applications			Music
+Ch_8_to_10.txt			newdir
+Desktop				OneDrive - Villanova University
+dir1				Pictures
+Documents			Public
+Downloads			testdir
+iCloud Drive (Archive)		Virtual Machines.localized
+Library				workspace.code-workspace
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hrrmdir testdir[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hlls [?2004l
+
+anaconda3			Movies
+Applications			Music
+Ch_8_to_10.txt			newdir
+Desktop				OneDrive - Villanova University
+dir1				Pictures
+Documents			Public
+Downloads			Virtual Machines.localized
+iCloud Drive (Archive)		workspace.code-workspace
+Library
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hmman bash[?2004l
+
+[?1049h[?1h=
+BASH(1)                     General Commands Manual                    BASH(1)
+
+[1mNAME[0m
+       bash - GNU Bourne-Again SHell
+
+[1mSYNOPSIS[0m
+       [1mbash[0m [options] [file]
+
+[1mCOPYRIGHT[0m
+       Bash is Copyright (C) 1989-2005 by the Free Software Foundation, Inc.
+
+[1mDESCRIPTION[0m
+       [1mBash[0m is an [1msh[0m-compatible command language interpreter that executes
+       commands read from the standard input or from a file.  [1mBash[0m also
+       incorporates useful features from the [4mKorn[24m and [4mC[24m shells ([1mksh[0m and [1mcsh[0m).
+
+       [1mBash[0m is intended to be a conformant implementation of the Shell and
+       Utilities portion of the IEEE POSIX specification (IEEE Standard
+       1003.1).  [1mBash[0m can be configured to be POSIX-conformant by default.
+
+[1mOPTIONS[0m
+       In addition to the single-character shell options documented in the
+       description of the [1mset[0m builtin command, [1mbash[0m interprets the following
+:[K
+[K/[Kpp[Kuu[Kss[Khh[Kdd
+[K[1;1HBASH(1)                     General Commands Manual                    BASH(1)
+[2;1H
+[3;1H[1mNAME[0m
+[4;1H       bash - GNU Bourne-Again SHell
+[5;1H
+[6;1H[1mSYNOPSIS[0m
+[7;1H       [1mbash[0m [options] [file]
+[8;1H
+[9;1H[1mCOPYRIGHT[0m
+[10;1H       Bash is Copyright (C) 1989-2005 by the Free Software Foundation, Inc.
+[11;1H
+[12;1H[1mDESCRIPTION[0m
+[13;1H       [1mBash[0m is an [1msh[0m-compatible command language interpreter that executes
+[14;1H       commands read from the standard input or from a file.  [1mBash[0m also
+[15;1H       incorporates useful features from the [4mKorn[24m and [4mC[24m shells ([1mksh[0m and [1mcsh[0m).
+[16;1H
+[17;1H       [1mBash[0m is intended to be a conformant implementation of the Shell and
+[18;1H       Utilities portion of the IEEE POSIX specification (IEEE Standard
+[19;1H       1003.1).  [1mBash[0m can be configured to be POSIX-conformant by default.
+[20;1H
+[21;1H[1mOPTIONS[0m
+[22;1H       In addition to the single-character shell options documented in the
+[23;1H       description of the [1mset[0m builtin command, [1mbash[0m interprets the following
+[24;1H[1;1HBASH(1)                     General Commands Manual                    BASH(1)
+[2;1H
+[3;1H[1mNAME[0m
+[4;1H       bash - GNU Bourne-Again SHell
+[5;1H
+[6;1H[1mSYNOPSIS[0m
+[7;1H       [1mbash[0m [options] [file]
+[8;1H
+[9;1H[1mCOPYRIGHT[0m
+[10;1H       Bash is Copyright (C) 1989-2005 by the Free Software Foundation, Inc.
+[11;1H
+[12;1H[1mDESCRIPTION[0m
+[13;1H       [1mBash[0m is an [1msh[0m-compatible command language interpreter that executes
+[14;1H       commands read from the standard input or from a file.  [1mBash[0m also
+[15;1H       incorporates useful features from the [4mKorn[24m and [4mC[24m shells ([1mksh[0m and [1mcsh[0m).
+[16;1H
+[17;1H       [1mBash[0m is intended to be a conformant implementation of the Shell and
+[18;1H       Utilities portion of the IEEE POSIX specification (IEEE Standard
+[19;1H       1003.1).  [1mBash[0m can be configured to be POSIX-conformant by default.
+[20;1H
+[21;1H[1mOPTIONS[0m
+[22;1H       In addition to the single-character shell options documented in the
+[23;1H       description of the [1mset[0m builtin command, [1mbash[0m interprets the following
+[24;1H...skipping...
+              modify directories already in the stack, but the [1m[7mpushd[27m[0m and [1mpopd[0m
+              builtins must be used to add and remove directories.  Assignment
+              to this variable will not change the current directory.  If
+              [1mDIRSTACK[0m is unset, it loses its special properties, even if it
+              is subsequently reset.
+
+       [1mEUID[0m   Expands to the effective user ID of the current user,
+              initialized at shell startup.  This variable is readonly.
+
+       [1mFUNCNAME[0m
+              An array variable containing the names of all shell functions
+              currently in the execution call stack.  The element with index 0
+              is the name of any currently-executing shell function.  The
+              bottom-most element is "main".  This variable exists only when a
+              shell function is executing.  Assignments to [1mFUNCNAME[0m have no
+              effect and return an error status.  If [1mFUNCNAME[0m is unset, it
+              loses its special properties, even if it is subsequently reset.
+
+       [1mGROUPS[0m An array variable containing the list of groups of which the
+              current user is a member.  Assignments to [1mGROUPS[0m have no effect
+              and return an error status.  If [1mGROUPS[0m is unset, it loses its
+              special properties, even if it is subsequently reset.
+
+:[K
+[K [KESCESC[KOO[KAA
+[K[HM              Assigning to members of this array variable may be used to
+[24;1H
+[K:[K
+[K/
+[K
+:[K
+[K/
+[K...skipping...
+       •      the current working directory as set by [1mcd[0m, [1m[7mpushd[27m[0m, or [1mpopd[0m, or
+              inherited by the shell at invocation
+
+       •      the file creation mode mask as set by [1mumask[0m or inherited from
+              the shell's parent
+
+       •      current traps set by [1mtrap[0m
+
+       •      shell parameters that are set by variable assignment or with [1mset[0m
+              or inherited from the shell's parent in the environment
+
+       •      shell functions defined during execution or inherited from the
+              shell's parent in the environment
+
+       •      options enabled at invocation (either by default or with
+              command-line arguments) or by [1mset[0m
+
+       •      options enabled by [1mshopt[0m
+
+       •      shell aliases defined with [1malias[0m
+
+       •      various process IDs, including those of background jobs, the
+              value of [1m$$[0m, and the value of [1m$PPID[0m
+:[K
+[K/
+[K...skipping...
+              the list with the [1m[7mpushd[27m[0m command; the [1mpopd[0m command removes
+              entries from the list.
+              [1m+[0m[4mn[24m     Displays the [4mn[24mth entry counting from the left of the list
+                     shown by [1mdirs[0m when invoked without options, starting with
+                     zero.
+              [1m-[0m[4mn[24m     Displays the [4mn[24mth entry counting from the right of the
+                     list shown by [1mdirs[0m when invoked without options, starting
+                     with zero.
+              [1m-c[0m     Clears the directory stack by deleting all of the
+                     entries.
+              [1m-l[0m     Produces a longer listing; the default listing format
+                     uses a tilde to denote the home directory.
+              [1m-p[0m     Print the directory stack with one entry per line.
+              [1m-v[0m     Print the directory stack with one entry per line,
+                     prefixing each entry with its index in the stack.
+
+              The return value is 0 unless an invalid option is supplied or [4mn[24m
+              indexes beyond the end of the directory stack.
+
+       [1mdisown[0m [[1m-ar[0m] [[1m-h[0m] [[4mjobspec[24m ...]
+              Without options, each [4mjobspec[24m is removed from the table of
+              active jobs.  If the [1m-h[0m option is given, each [4mjobspec[24m is not
+              removed from the table, but is marked so that [1mSIGHUP[0m is not sent
+:[K
+[K/[Kpp[Koo[Kpp[Kdd
+[K[1;1H              the list with the [1mpushd[0m command; the [1mpopd[0m command removes
+[2;1H              entries from the list.
+[3;1H              [1m+[0m[4mn[24m     Displays the [4mn[24mth entry counting from the left of the list
+[4;1H                     shown by [1mdirs[0m when invoked without options, starting with
+[5;1H                     zero.
+[6;1H              [1m-[0m[4mn[24m     Displays the [4mn[24mth entry counting from the right of the
+[7;1H                     list shown by [1mdirs[0m when invoked without options, starting
+[8;1H                     with zero.
+[9;1H              [1m-c[0m     Clears the directory stack by deleting all of the
+[10;1H                     entries.
+[11;1H              [1m-l[0m     Produces a longer listing; the default listing format
+[12;1H                     uses a tilde to denote the home directory.
+[13;1H              [1m-p[0m     Print the directory stack with one entry per line.
+[14;1H              [1m-v[0m     Print the directory stack with one entry per line,
+[15;1H                     prefixing each entry with its index in the stack.
+[16;1H
+[17;1H              The return value is 0 unless an invalid option is supplied or [4mn[24m
+[18;1H              indexes beyond the end of the directory stack.
+[19;1H
+[20;1H       [1mdisown[0m [[1m-ar[0m] [[1m-h[0m] [[4mjobspec[24m ...]
+[21;1H              Without options, each [4mjobspec[24m is removed from the table of
+[22;1H              active jobs.  If the [1m-h[0m option is given, each [4mjobspec[24m is not
+[23;1H              removed from the table, but is marked so that [1mSIGHUP[0m is not sent
+[24;1H[1;1H              the list with the [1mpushd[0m command; the [1m[7mpopd[27m[0m command removes
+[2;1H              entries from the list.
+[3;1H              [1m+[0m[4mn[24m     Displays the [4mn[24mth entry counting from the left of the list
+[4;1H                     shown by [1mdirs[0m when invoked without options, starting with
+[5;1H                     zero.
+[6;1H              [1m-[0m[4mn[24m     Displays the [4mn[24mth entry counting from the right of the
+[7;1H                     list shown by [1mdirs[0m when invoked without options, starting
+[8;1H                     with zero.
+[9;1H              [1m-c[0m     Clears the directory stack by deleting all of the
+[10;1H                     entries.
+[11;1H              [1m-l[0m     Produces a longer listing; the default listing format
+[12;1H                     uses a tilde to denote the home directory.
+[13;1H              [1m-p[0m     Print the directory stack with one entry per line.
+[14;1H              [1m-v[0m     Print the directory stack with one entry per line,
+[15;1H                     prefixing each entry with its index in the stack.
+[16;1H
+[17;1H              The return value is 0 unless an invalid option is supplied or [4mn[24m
+[18;1H              indexes beyond the end of the directory stack.
+[19;1H
+[20;1H       [1mdisown[0m [[1m-ar[0m] [[1m-h[0m] [[4mjobspec[24m ...]
+[21;1H              Without options, each [4mjobspec[24m is removed from the table of
+[22;1H              active jobs.  If the [1m-h[0m option is given, each [4mjobspec[24m is not
+[23;1H              removed from the table, but is marked so that [1mSIGHUP[0m is not sent
+[24;1H
+[K:[K
+[K/
+[K...skipping...
+       [1m[7mpopd[27m[0m [-[1mn[0m] [+[4mn[24m] [-[4mn[24m]
+              Removes entries from the directory stack.  With no arguments,
+              removes the top directory from the stack, and performs a [1mcd[0m to
+              the new top directory.  Arguments, if supplied, have the
+              following meanings:
+              [1m+[0m[4mn[24m     Removes the [4mn[24mth entry counting from the left of the list
+                     shown by [1mdirs[0m, starting with zero.  For example: ``[7mpopd[27m
+                     +0'' removes the first directory, ``[7mpopd[27m +1'' the second.
+              [1m-[0m[4mn[24m     Removes the [4mn[24mth entry counting from the right of the list
+                     shown by [1mdirs[0m, starting with zero.  For example: ``[7mpopd[27m
+                     -0'' removes the last directory, ``[7mpopd[27m -1'' the next to
+                     last.
+              [1m-n[0m     Suppresses the normal change of directory when removing
+                     directories from the stack, so that only the stack is
+                     manipulated.
+
+              If the [1m[7mpopd[27m[0m command is successful, a [1mdirs[0m is performed as well,
+              and the return status is 0.  [1m[7mpopd[27m[0m returns false if an invalid
+              option is encountered, the directory stack is empty, a non-
+              existent directory stack entry is specified, or the directory
+              change fails.
+
+       [1mprintf[0m [[1m-v[0m [4mvar[24m] [4mformat[24m [[4marguments[24m]
+:[K
+[K/
+[K              Write the formatted [4marguments[24m to the standard output under the
+              control of the [4mformat[24m.  The [4mformat[24m is a character string which
+              contains three types of objects: plain characters, which are
+              simply copied to standard output, character escape sequences,
+              which are converted and copied to the standard output, and
+              format specifications, each of which causes printing of the next
+:[K
+[K              successive [4margument[24m.  In addition to the standard [4mprintf[24m(1)
+:[K
+[K:[K
+[K[?1l>[?1049l[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hu ccec  eecho Ch_9 exercises [?2004l
+
+Ch_9 exercise
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hlls /bin[?2004l
+
+[		dd		launchctl	pwd		tcsh
+bash		df		link		realpath	test
+cat		echo		ln		rm		unlink
+chmod		ed		ls		rmdir		wait4path
+cp		expr		mkdir		sh		zsh
+csh		hostname	mv		sleep
+dash		kill		pax		stty
+date		ksh		ps		sync
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hffile /bin/cat /etc/passwd /use r/bin/passwd[?2004l
+
+/bin/cat:        Mach-O universal binary with 2 architectures: [x86_64:Mach-O 64-bit executable x86_64] [arm64e:Mach-O 64-bit executable arm64e]
+/bin/cat (for architecture x86_64):	Mach-O 64-bit executable x86_64
+/bin/cat (for architecture arm64e):	Mach-O 64-bit executable arm64e
+/etc/passwd:     ASCII text
+/usr/bin/passwd: Mach-O universal binary with 2 architectures: [x86_64:Mach-O 64-bit executable x86_64] [arm64e:Mach-O 64-bit executable arm64e]
+/usr/bin/passwd (for architecture x86_64):	Mach-O 64-bit executable x86_64
+/usr/bin/passwd (for architecture arm64e):	Mach-O 64-bit executable arm64e
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hppwd[?2004l
+
+/Users/sai
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004h[7mwget http://linux-training.be/files/studentfiles/wolf[7m.[7mjpg[27m[K[A[23C[27mw[27mg[27me[27mt[27m [27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mi[27mn[27mu[27mx[27m-[27mt[27mr[27ma[27mi[27mn[27mi[27mn[27mg[27m.[27mb[27me[27m/[27mf[27mi[27ml[27me[27ms[27m/[27ms[27mt[27mu[27md[27me[27mn[27mt[27mf[27mi[27ml[27me[27ms[27m/[27mw[27mo[27ml[27mf.[27mj[27mp[27mg[?2004l
+
+zsh: command not found: wget
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hiinstalling [11Deinstalling [11Decinstalling [11Dhinstalling [11D[1Cinstalling [11D[P[10C [12Doinstalling [11D installing [11D[11Cwegetget [3C to continue exercidw  se[?2004l
+
+installing wget to continue exercise
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hecho installing wget to continue exercise[41Dwget http://linux-training.be/files/studentfiles/wolf.jpg[K[?2004l
+
+--2025-05-14 12:04:37--  http://linux-training.be/files/studentfiles/wolf.jpg
+Resolving linux-training.be (linux-training.be)... 2a01:4f8:d0a:1044::2, 188.40.26.208
+Connecting to linux-training.be (linux-training.be)|2a01:4f8:d0a:1044::2|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2025-05-14 12:04:38 ERROR 404: Not Found.
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hwwget [7mwget http://linux-training.be/files/studentfiles[7m/[7mwolf.png[27m[K[A[23C[27mw[27mg[27me[27mt[27m [27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mi[27mn[27mu[27mx[27m-[27mt[27mr[27ma[27mi[27mn[27mi[27mn[27mg[27m.[27mb[27me[27m/[27mf[27mi[27ml[27me[27ms[27m/[27ms[27mt[27mu[27md[27me[27mn[27mt[27mf[27mi[27ml[27me[27ms/[27mw[27mo[27ml[27mf[27m.[27mp[27mn[27mg[?2004l
+
+Prepended http:// to 'wget'
+--2025-05-14 12:05:17--  http://wget/
+Resolving wget (wget)... failed: nodename nor servname provided, or not known.
+wget: unable to resolve host address ‘wget’
+--2025-05-14 12:05:17--  http://linux-training.be/files/studentfiles/wolf.png
+Resolving linux-training.be (linux-training.be)... 2a01:4f8:d0a:1044::2, 188.40.26.208
+Connecting to linux-training.be (linux-training.be)|2a01:4f8:d0a:1044::2|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2025-05-14 12:05:17 ERROR 404: Not Found.
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hwwget[7mwget http://linux-training.be/files/studentfiles/[7mw[7molf.png[27m[K[A[23C[27mw[27mg[27me[27mt[27m [27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mi[27mn[27mu[27mx[27m-[27mt[27mr[27ma[27mi[27mn[27mi[27mn[27mg[27m.[27mb[27me[27m/[27mf[27mi[27ml[27me[27ms[27m/[27ms[27mt[27mu[27md[27me[27mn[27mt[27mf[27mi[27ml[27me[27ms[27m/w[27mo[27ml[27mf[27m.[27mp[27mn[27mg[A[25C wget http://linux-training.be/files/studentfiles/wolf.png
+[A[79C[42D[P[48C/wolf.png 
+[A[79C[31D[9D[1C[1C[1C[1C[P[49Cwolf.png [A[22C[P[50Colf.png [A[22Cw[P[51Clf.png [A[22C[P[52Cf.png [A[22C[?2004l[1B
+
+--2025-05-14 12:05:36--  http://linux-training.be/files/studentfiles/wolf.png
+Resolving linux-training.be (linux-training.be)... 2a01:4f8:d0a:1044::2, 188.40.26.208
+Connecting to linux-training.be (linux-training.be)|2a01:4f8:d0a:1044::2|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2025-05-14 12:05:37 ERROR 404: Not Found.
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hmmkdir ~/touched[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hccd ~/touched[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hppwd[?2004l
+
+/Users/sai/touched
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004httouch today.txt yesterf dat y.txt[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hlls /touched[?2004l
+
+ls: /touched: No such file or directory
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hls /touchedtouched [8D[?2004l
+
+ls: touched: No such file or directory
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hls touched       [?2004l
+
+today.txt	yesterday.txt
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004httoouch -t      uch   t  lls -l[?2004l
+
+total 0
+-rw-r--r--  1 sai  staff  0 May 14 12:11 today.txt
+-rw-r--r--  1 sai  staff  0 May 14 12:11 yesterday.txt
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hlls -lh[?2004l
+
+total 0
+-rw-r--r--  1 sai  staff     0B May 14 12:11 today.txt
+-rw-r--r--  1 sai  staff     0B May 14 12:11 yesterday.txt
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004heecho TT  YYYYMMDDHHMM[?2004l
+
+YYYYMMDDHHMM
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004httouch -t202    202505131209 7 yesterday.txt[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004htouch -t 202505131207 yesterday.txt[35Decho YYYYMMDDHHMM                  [18D[17Dls -lh           [11D[?2004l
+
+total 0
+-rw-r--r--  1 sai  staff     0B May 14 12:11 today.txt
+-rw-r--r--  1 sai  staff     0B May 13 12:07 yesterday.txt
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hccp ls -lhtouch -t 202505131207 yesterday.txt[35Decho YYYYMMDDHHMM                  [18D[17Dls -lh           [11D    touched/touched[11Dtouch today.txt yesterday.txt[29Dpwd                          [26Dtouch today.txt yesterday.txt[P[13C [14D[P[13C [14D[P[13C [14D[P[13C [14D[P[13C [14D[P[12C [14D[P[13C [14D[P[13C [14D[P[13C [14D[P[13C [14D[P[13C [14D[P[13C [14D[P[13C [14D[P[13C [14Dt[P[13C [14D[P[13C [14Dcyesterday.txt[13Dcpyesterday.txt[13D yesterday.txt[13D[1C[12C yesterday_cpoy.txty.txt y.txt oy.txtpy.txt[1C[1C[1C[1C[1C[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hlls[?2004l
+
+today.txt		yesterday_copy.txt	yesterday.txt
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hrrmlscp yesterday.txt yesterday_copy.txt[P[18C [19D[P[18C [19D[P[18C [19D[P[18C [19D[P[18C [19D[P[17C [19D[P[18C [19D[P[18C [19D[P[18C [19D[P[18C [19D[P[18C [19D[P[18C [19D[P[18C [19D[P[17C [19D[P[18C [19Dc[P[18C [19D[P[18C [19Dryesterday_copy.txt[18Drmyesterday_copy.txt[18D yesterday_copy.txt[18D[18C[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hrm yesterday_copy.txt[21Dls                   [19Dcp yesterday.txt yesterday_copy.txt[1C.txt .txt .txt .txt .txt cyesterday.txt[13Doyesterday.txt[13Dpyesterday.txt[13D[1Cyesterday.txt[13D.yesterday.txt[13D[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hlls[?2004l
+
+copy.yesterday.txt	today.txt		yesterday.txt
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hmmv copy.yesterday.txt kin m[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hlls[?2004l
+
+kim		today.txt	yesterday.txt
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hmmkdir ~/testbackup[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hccp -r ~/touched ~test/test[1C[1C[1C[1Cbackup[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hppwd p  llscp -r ~/touched ~/testbackup[28Dmkdi[5C[10P[9C          [10D[P[12C [13D[P[12C [13D[P[12C [13D[P[12C [13Dm[P[12C [13D[P[12C [13Dl~/testbackup[12Dls~/testbackup[12D ~/testbackup[12D[P[11C [12D[11C[?2004l
+
+ls: /testbackup: No such file or directory
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hls /testbackup~/testbackup[11D[?2004l
+
+touched
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hls ~/testbackup[12D[P[11C [14Dcp -r ~/touched ~/testbackup/[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hcp -r ~/touched ~/testbackup/[29Dls[13P[13C              [14D[?2004l
+
+touched
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hlls ~/testbackup[15Dcp -r ~/touched ~/testbackup/[P[24C [25D[P[24C [25D[P[23C [25Dc[P[24C [25D[P[24C [25Dl ~/touched ~/testbackup/[24Dls ~/touched ~/testbackup/[24D[?2004l
+
+/Users/sai/testbackup/:
+touched
+
+/Users/sai/touched:
+kim		today.txt	yesterday.txt
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hls ~/touched ~/testbackup/[20D[10P[9C           [11D[15Dcp -r ~/touched ~/testbackup/[1C/ ~/testbackup/[14D[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hcp -r ~/touched/ ~/testbackup/[30Dls[3P[10C[P[14C    [?2004l
+
+/Users/sai/testbackup/:
+kim		today.txt	touched		yesterday.txt
+
+/Users/sai/touched:
+kim		today.txt	yesterday.txt
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hls ~/touched ~/testbackup/[26Dcp -r ~/touched/ ~/testbackup/[P[14C [15D[P[14C [15D[P[14C [15D[P[14C [15D[P[14C [15D[P[14C [15D[P[14C [15D[P[14C [15D[P[14C [15D[P[14C [15D[P[13C [15D[P[14C [15D[P[14C [15D[P[13C [15Dc[P[14C [15D[P[14C [15Dr ~/testbackup/[14Drm ~/testbackup/[14D[1C ~/testbackup/[14D- ~/testbackup/[14Dr ~/testbackup/[14D[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C [?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hlls ~/[?2004l
+
+anaconda3			Movies
+Applications			Music
+Ch_8_to_10.txt			newdir
+Desktop				OneDrive - Villanova University
+dir1				Pictures
+Documents			Public
+Downloads			touched
+iCloud Drive (Archive)		Virtual Machines.localized
+Library				workspace.code-workspace
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hmmkdir ! ~/etcbackup[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hccp c  mkdir ~/etcbackup[P[11C [12D[P[11C [12D[P[11C [12D[P[11C [12Dm[P[11C [12D[P[11C [12Dl~/etcbackup[11Dls~/etcbackup[11D ~/etcbackup[11D[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hls ~/etcbackup[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hls ~/etcbackup[1C[1C[1C[1C[1C[1C[1C[1C[1C           l  ccp r-r[1C/etc/*.config   ~/etcbackup[?2004l
+
+zsh: no matches found: -r/etc/*.conf
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hcp -r/etc/*.conf ~/etcbackup /etc/*.conf ~/etcbackup[23D[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[10C[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hcp -r /etc/*.conf ~/etcbackup[24D[P[23C [28Dls[14P[12C              [14D[?2004l
+
+asl.conf		nfs.conf		resolv.conf
+autofs.conf		notify.conf		rtadvd.conf
+kern_loader.conf	ntp_opendirectory.conf	syslog.conf
+man.conf		ntp.conf
+newsyslog.conf		pf.conf
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hrrename .conf[1C[1C[1C[1C[1C[1C[1C .conf* .conf[1C.conf [1C[1C[1C[1C[1C[1C.conf [1C[1C[1C[1C[1C *conf [P[12C [13D[P[12C [13D[P[12C [13D[P[12C [13D[P[12C [13Dr[P[12C [13D[P[12C [13Dr.conf *conf [12Dre.conf *conf [12Dm.conf *conf [12D[P[12C [13Dn.conf *conf [12Da.conf *conf [12Dm.conf *conf [12De.conf *conf [12D .conf *conf [12D[1C[1C[4C[6C~/etcbackup[?2004l
+
+zsh: no matches found: *conf
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hrename .conf *conf ~/etcbackup.conf ~/etcbackup[16D[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[?2004l
+
+zsh: no matches found: *.conf
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hrename .conf *.conf ~/etcbackup[P[12C [13D[P[12C [13D[P[12C [13D[P[12C [13Db ~/etcbackup[12Da ~/etcbackup[12Dc ~/etcbackup[12Dk ~/etcbackup[12Du ~/etcbackup[12Dp ~/etcbackup[12D[?2004l
+
+zsh: no matches found: *.backup
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hrename .conf *.backup ~/etcbackup[P[25C [26D[?2004l
+
+zsh: no matches found: *.backup
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hllsrename conf *.backup ~/etcbackup[25D.conf *.backup ~/etcbackup[18Dconf[P[P[12C  [17D[P[16C [30Dls[16P[12C                [16D/*.conf[?2004l
+
+/Users/sai/etcbackup/asl.conf
+/Users/sai/etcbackup/autofs.conf
+/Users/sai/etcbackup/kern_loader.conf
+/Users/sai/etcbackup/man.conf
+/Users/sai/etcbackup/newsyslog.conf
+/Users/sai/etcbackup/nfs.conf
+/Users/sai/etcbackup/notify.conf
+/Users/sai/etcbackup/ntp_opendirectory.conf
+/Users/sai/etcbackup/ntp.conf
+/Users/sai/etcbackup/pf.conf
+/Users/sai/etcbackup/resolv.conf
+/Users/sai/etcbackup/rtadvd.conf
+/Users/sai/etcbackup/syslog.conf
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hls ~/etcbackup/*.conf[21Drename conf *.backup ~/etcbackup'conf *.backup ~/etcbackup[25Dsconf *.backup ~/etcbackup[25D/conf *.backup ~/etcbackup[25D\conf *.backup ~/etcbackup[25D.conf *.backup ~/etcbackup[25D[1C[1C[1C[1C$ *.backup ~/etcbackup[21D[1C/ *.backup ~/etcbackup[21D[P[20C [21D[1C[P[19C [20D[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C/*.conf[?2004l
+
+
+[0m[27m[24m[Jquote> [K[?2004h[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hrename 's/\.conf$/.backup ~/etcbackup/*.conf[1C' ~/etcbackup/*.conf[19D[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[?2004l
+
+Substitution replacement not terminated at (eval 2) line 1.
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hrename 's/\.conf$/.backup' ~/etcbackup/*.conf[20D[P[19C [44Dls[23P[19C                       [23D[21Drename conf *.backup ~/etcbackup[32Dls[18P[12C/*.conf           [11D[?2004l
+
+/Users/sai/etcbackup/asl.conf
+/Users/sai/etcbackup/autofs.conf
+/Users/sai/etcbackup/kern_loader.conf
+/Users/sai/etcbackup/man.conf
+/Users/sai/etcbackup/newsyslog.conf
+/Users/sai/etcbackup/nfs.conf
+/Users/sai/etcbackup/notify.conf
+/Users/sai/etcbackup/ntp_opendirectory.conf
+/Users/sai/etcbackup/ntp.conf
+/Users/sai/etcbackup/pf.conf
+/Users/sai/etcbackup/resolv.conf
+/Users/sai/etcbackup/rtadvd.conf
+/Users/sai/etcbackup/syslog.conf
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004h[7mrename 's/\.conf$/.backup/' ~/etcbackup/*.conf[27m
+
+[K[A[33C[27mr[27me[27mn[27ma[27mm[27me[27m [27m'[27ms[27m/[27m\[27m.[27mc[27mo[27mn[27mf[27m$[27m/[27m.[27mb[27ma[27mc[27mk[27mu[27mp[27m/[27m'[27m [27m~[27m/[27me[27mt[27mc[27mb[27ma[27mc[27mk[27mu[27mp[27m/[27m*[27m.[27mc[27mo[27mn[27mf[1B
+[K[A[79C[?2004l[1B
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hrename 's/\.conf$/.backup/' ~/etcbackup/*.conf
+
+[K[K[A[33Cls[25P[19C                         [1B
+[K[A[54C[?2004l[1B
+zsh: no matches found: /Users/sai/etcbackup/*.conf
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hls ~/etcbackup/*.conf    backup[?2004l
+
+/Users/sai/etcbackup/asl.backup
+/Users/sai/etcbackup/autofs.backup
+/Users/sai/etcbackup/kern_loader.backup
+/Users/sai/etcbackup/man.backup
+/Users/sai/etcbackup/newsyslog.backup
+/Users/sai/etcbackup/nfs.backup
+/Users/sai/etcbackup/notify.backup
+/Users/sai/etcbackup/ntp_opendirectory.backup
+/Users/sai/etcbackup/ntp.backup
+/Users/sai/etcbackup/pf.backup
+/Users/sai/etcbackup/resolv.backup
+/Users/sai/etcbackup/rtadvd.backup
+/Users/sai/etcbackup/syslog.backup
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004h[7mrename 's/\.conf$/.backup/' ~/etcbackup/*.conf[27m[46D[27mr[27me[27mn[27ma[27mm[27me[27m [27m'[27ms[27m/[27m\[27m.[27mc[27mo[27mn[27mf[27m$[27m/[27m.[27mb[27ma[27mc[27mk[27mu[27mp[27m/[27m'[27m [27m~[27m/[27me[27mt[27mc[27mb[27ma[27mc[27mk[27mu[27mp[27m/[27m*[27m.[27mc[27mo[27mn[27mf[P[21C [22D[P[21C [22D[P[21C [22D[P[21C [22D[P[21C [22D[P[21C [22Dc/' ~/etcbackup/*.conf[21Do/' ~/etcbackup/*.conf[21Dn/' ~/etcbackup/*.conf[21Df/' ~/etcbackup/*.conf[21D[1C[P[28C [29D[P[28C [29D[P[28C [29D[P[28C [29Db$/.conf/' ~/etcbackup/*.conf[28Da$/.conf/' ~/etcbackup/*.conf[28Dc$/.conf/' ~/etcbackup/*.conf[28Dk$/.conf/' ~/etcbackup/*.conf[28Du$/.conf/' ~/etcbackup/*.conf[28Dp$/.conf/' ~/etcbackup/*.conf[28D[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[?2004l
+
+zsh: no matches found: /Users/sai/etcbackup/*.conf
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hrename 's/\.backup$/.conf/' ~/etcbackup/*.conf    backu 
+[Kp[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hrename 's/\.backup$/.conf/' ~/etcbackup/*.backup[K[A[74Cconf[K[1B
+[K[A[79C[46Dls[25P[15Cbackup                       [23D[?2004l[1B
+zsh: no matches found: /Users/sai/etcbackup/*.backup
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hls ~/etcbackup/*.backup      conf[?2004l
+
+/Users/sai/etcbackup/asl.conf
+/Users/sai/etcbackup/autofs.conf
+/Users/sai/etcbackup/kern_loader.conf
+/Users/sai/etcbackup/man.conf
+/Users/sai/etcbackup/newsyslog.conf
+/Users/sai/etcbackup/nfs.conf
+/Users/sai/etcbackup/notify.conf
+/Users/sai/etcbackup/ntp_opendirectory.conf
+/Users/sai/etcbackup/ntp.conf
+/Users/sai/etcbackup/pf.conf
+/Users/sai/etcbackup/resolv.conf
+/Users/sai/etcbackup/rtadvd.conf
+/Users/sai/etcbackup/syslog.conf
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hcclear[?2004l
+
+[H[2J[3J[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004heecho Chapter 10[?2004l
+
+Chapter 10
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hllsl  ppwd[?2004l
+
+/Users/sai/touched
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai/touched
+[0m[27m[24m[J(base) sai@MacBook-Air touched % [K[?2004hccd ~[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hlls[?2004l
+
+anaconda3			Movies
+Applications			Music
+Ch_8_to_10.txt			newdir
+Desktop				OneDrive - Villanova University
+dir1				Pictures
+Documents			Public
+Downloads			touched
+etcbackup			Virtual Machines.localized
+iCloud Drive (Archive)		workspace.code-workspace
+Library
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hccd /[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/
+[0m[27m[24m[J(base) sai@MacBook-Air / % [K[?2004hlls[?2004l
+
+Applications	etc		private		Users
+bin		home		sbin		usr
+cores		Library		System		var
+dev		opt		tmp		Volumes
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/
+[0m[27m[24m[J(base) sai@MacBook-Air / % [K[?2004hhhead -12 /etc/services[?2004l
+
+#
+# Network services, Internet style
+#
+# Note that it is presently the policy of IANA to assign a single well-known
+# port number for both TCP and UDP; hence, most entries here have two entries
+# even if the protocol doesn't support UDP operations.
+#
+# The latest IANA port assignments can be gotten from
+#
+#	http://www.iana.org/assignments/port-numbers
+#
+# The Well Known Ports are those from 0 through 1023.
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/
+[0m[27m[24m[J(base) sai@MacBook-Air / % [K[?2004httail -1 /etc/passwd[?2004l
+
+_oahd:*:441:441:OAH Daemon:/var/empty:/usr/bin/false
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/
+[0m[27m[24m[J(base) sai@MacBook-Air / % [K[?2004hccd ` ~[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hppwd[?2004l
+
+/Users/sai
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hccat count.txt[1C count.txt[10D> count.txt[10D[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[?2004l
+
+o One
+Two
+Three
+Four
+Five
+^D[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hccp count.txt cnt.txt[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hlls[?2004l
+
+anaconda3			Library
+Applications			Movies
+Ch_8_to_10.txt			Music
+cnt.txt				newdir
+count.txt			OneDrive - Villanova University
+Desktop				Pictures
+dir1				Public
+Documents			touched
+Downloads			Virtual Machines.localized
+etcbackup			workspace.code-workspace
+iCloud Drive (Archive)
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hccat cnt.txt > catcnt.txtont.txt > catcnt.txt[19Dunt.txt > catcnt.txt[19D[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hlls[?2004l
+
+anaconda3			iCloud Drive (Archive)
+Applications			Library
+catcnt.txt			Movies
+Ch_8_to_10.txt			Music
+cnt.txt				newdir
+count.txt			OneDrive - Villanova University
+Desktop				Pictures
+dir1				Public
+Documents			touched
+Downloads			Virtual Machines.localized
+etcbackup			workspace.code-workspace
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004httac catcnt.tt xt[?2004l
+
+zsh: command not found: tac
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004htac catcnt.txt[?2004l
+
+Five
+Four
+Three
+Two
+One
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hmmopre /etc[1C`/etc/etc ~/etc/etc [1C[1C[1C[1C/services[?2004l
+
+zsh: command not found: mopre
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hmopre /etc/services[P[16C [17D[?2004l
+
+[?1h=
+#
+# Network services, Internet style
+#
+# Note that it is presently the policy of IANA to assign a single well-known
+# port number for both TCP and UDP; hence, most entries here have two entries
+# even if the protocol doesn't support UDP operations.
+#
+# The latest IANA port assignments can be gotten from
+#
+#       http://www.iana.org/assignments/port-numbers
+#
+# The Well Known Ports are those from 0 through 1023.
+# The Registered Ports are those from 1024 through 49151
+# The Dynamic and/or Private Ports are those from 49152 through 65535
+#
+# $FreeBSD: src/etc/services,v 1.89 2002/12/17 23:59:10 eric Exp $
+#       From: @(#)services      5.8 (Berkeley) 5/9/91
+#
+# WELL KNOWN PORT NUMBERS
+#
+rtmp              1/ddp    #Routing Table Maintenance Protocol
+tcpmux            1/udp     # TCP Port Service Multiplexer
+tcpmux            1/tcp     # TCP Port Service Multiplexer
+[7m/etc/services[27m[K
+[K[?1l>[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hsstrings /use r/ni  bin/passwd[?2004l
+
+@(#)PROGRAM:passwd  PROJECT:system_cmds-1026.100.5
+fffff
+passwd
+Changing password for %s.
+Old password:
+Sorry
+New password:
+Password must be at least %d characters long.
+Retype new password:
+i:l:u:
+file
+opendirectory
+%s: Unknown info system '%s'.
+you don't have a login name
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789./
+usage: %s [-i infosystem] -l location]] [-u authname] [name]
+  infosystem:
+    file
+    NIS
+    OpenDirectory
+    PAM
+  location (for infosystem):
+    file           location is path to file (default is %s)
+/etc/master.passwd
+    NIS            location is NIS domain name
+    OpenDirectory  location is directory node name
+    PAM            location is not used
+Password unchanged.
+Mismatch; try again, EOF to quit.
+Password must contain both upper and lower case characters.
+Password must contain non-alphabetic characters.
+################################### WARNING ###################################
+# This tool does not update the login keychain password.                      #
+# To update it, run `security set-keychain-password` as the user in question, #
+# or as root providing a path to such user's login keychain.                  #
+###############################################################################
+user %s not found in %s
+%s.XXXXXX
+%s:%s:%d:%d:%s:%ld:%ld:%s:%s:%s
+can't get domain
+passwd.byname
+can't get master for passwd file
+%s is not running yppasswd daemon
+yppasswd daemon is not running on privileged port
+user %s not found
+you may only change your own password
+could not contact yppasswdd on %s
+couldn't change passwd
+%s: Unknown user name '%s'.
+;SecureToken;
+/Local/
+Password for %s:
+%s: %@
+  %@
+%s: %s
+@(#)PROGRAM:passwd  PROJECT:system_cmds-1026.100.5
+fffff
+passwd
+Changing password for %s.
+Old password:
+Sorry
+New password:
+Password must be at least %d characters long.
+Retype new password:
+i:l:u:
+file
+opendirectory
+%s: Unknown info system '%s'.
+you don't have a login name
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789./
+usage: %s [-i infosystem] -l location]] [-u authname] [name]
+  infosystem:
+    file
+    NIS
+    OpenDirectory
+    PAM
+  location (for infosystem):
+    file           location is path to file (default is %s)
+/etc/master.passwd
+    NIS            location is NIS domain name
+    OpenDirectory  location is directory node name
+    PAM            location is not used
+Password unchanged.
+Mismatch; try again, EOF to quit.
+Password must contain both upper and lower case characters.
+Password must contain non-alphabetic characters.
+################################### WARNING ###################################
+# This tool does not update the login keychain password.                      #
+# To update it, run `security set-keychain-password` as the user in question, #
+# or as root providing a path to such user's login keychain.                  #
+###############################################################################
+user %s not found in %s
+%s.XXXXXX
+%s:%s:%d:%d:%s:%ld:%ld:%s:%s:%s
+can't get domain
+passwd.byname
+can't get master for passwd file
+%s is not running yppasswd daemon
+yppasswd daemon is not running on privileged port
+user %s not found
+you may only change your own password
+could not contact yppasswdd on %s
+couldn't change passwd
+%s: Unknown user name '%s'.
+;SecureToken;
+/Local/
+Password for %s:
+%s: %@
+  %@
+%s: %s
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hlls -lrS /etc /etc s /etc[1C[1C[1C[1C[1C[?2004l
+
+0 lrwxr-xr-x@ 1 root  wheel  11 Apr 12 01:16 /etc -> private/etc
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hls -lrs /etc[1C /etc [1C[1C[1C[1C[1C       l  ppwd[?2004l
+
+/Users/sai
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hccat c  ttail -f tailing.txt[?2004l
+
+this is the first line
+this is the first line
+this is the another line
+^C
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hrrm tailing.txt[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hlls[?2004l
+
+anaconda3			iCloud Drive (Archive)
+Applications			Library
+catcnt.txt			Movies
+Ch_8_to_10.txt			Music
+cnt.txt				newdir
+count.txt			OneDrive - Villanova University
+Desktop				Pictures
+dir1				Public
+Documents			touched
+Downloads			Virtual Machines.localized
+etcbackup			workspace.code-workspace
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004hccat /etc/passwd >> tailng   ling.txt[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004ha ccat c  cat /etc/passwd >> tailing.txt[P[11C [12D[P[11C [12D[P[11C [12D[P[11C [12D[P[11C [12D[P[11C [12D[P[11C [12D[P[11C [12D[P[11C [12D[P[11C [12D[P[11C [12D[P[11C [12D[P[10C [12D[P[11C [12D[P[11C [12D[P[12C [13Dc[P[12C [13D[P[12C [13Dh tailing.txt[12Dhe tailing.txt[12Da tailing.txt[12Dd tailing.txt[12D[1C tailing.txt[12D- tailing.txt[12D1 tailing.txt[12D0 tailing.txt[12D[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[?2004l
+
+##
+# User Database
+# 
+# Note that this file is consulted directly only when the system is running
+# in single-user mode.  At other times this information is provided by
+# Open Directory.
+#
+# See the opendirectoryd(8) man page for additional information about
+# Open Directory.
+##
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air.local/Users/sai
+[0m[27m[24m[J(base) sai@MacBook-Air ~ % [K[?2004heexit[?2004l
+
+
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+
+Script done on Wed May 14 13:55:35 2025
