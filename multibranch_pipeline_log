@@ -1,0 +1,37 @@
+Started by user admin
+[Thu May 22 16:35:22 UTC 2025] Starting branch indexing...
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.5'
+ > git ls-remote --symref -- https://github.com/ravdy/test-nodejs-app.git # timeout=10
+ > git rev-parse --resolve-git-dir /var/jenkins_home/caches/git-8855f425097010b3dc1892bc330d499c/.git # timeout=10
+Setting origin to https://github.com/ravdy/test-nodejs-app.git
+ > git config remote.origin.url https://github.com/ravdy/test-nodejs-app.git # timeout=10
+Fetching & pruning origin...
+Listing remote references...
+ > git config --get remote.origin.url # timeout=10
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.5'
+ > git ls-remote -h -- https://github.com/ravdy/test-nodejs-app.git # timeout=10
+Fetching upstream changes from origin
+ > git config --get remote.origin.url # timeout=10
+ > git fetch --tags --force --progress --prune -- origin +refs/heads/*:refs/remotes/origin/* # timeout=10
+Checking branches...
+  Checking branch qa
+      ‘Jenkinsfile’ found
+    Met criteria
+Scheduled build for branch: qa
+  Checking branch master
+      ‘Jenkinsfile’ found
+    Met criteria
+Scheduled build for branch: master
+  Checking branch stage
+      ‘Jenkinsfile’ found
+    Met criteria
+Scheduled build for branch: stage
+  Checking branch dev
+      ‘Jenkinsfile’ found
+    Met criteria
+Scheduled build for branch: dev
+Processed 4 branches
+[Thu May 22 16:35:23 UTC 2025] Finished branch indexing. Indexing took 0.66 sec
+Finished: SUCCESS
